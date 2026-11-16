@@ -1,0 +1,29 @@
+/* Frontier Labs: image interpreter card. Uses only the site's own tokens (--panel, --ink, --mute, --line, --earth, --good, --warn, --bad),
+   so Bright and Dark mode, the fonts and the audience modes apply automatically. */
+.ii .ii-h{margin-bottom:6px}
+.ii-row{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:18px 28px;align-items:start;margin-top:14px}
+.ii-drop{display:block;margin-top:0}
+.ii-drop.over{border-color:var(--earth)}
+.ii-thumbwrap{margin-top:12px}
+.ii-thumbwrap img{display:block;max-width:100%;max-height:240px;border-radius:12px;border:1px solid var(--line)}
+.ii-side{display:flex;flex-direction:column;gap:12px}
+.ii-off{display:flex;gap:8px;align-items:center;cursor:pointer}
+.ii-off input{width:18px;height:18px;accent-color:var(--earth)}
+.ii-out:not(:empty){margin-top:20px;border-top:1px solid var(--line);padding-top:18px}
+.ii-top{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:8px}
+.ii-badge{display:inline-block;font-size:13px;font-weight:700;color:var(--accent);border:1px solid currentColor;border-radius:99px;padding:2px 12px}
+.ii-head{font-size:clamp(20px,2.6vw,26px);margin:4px 0 8px}
+.ii-sum{max-width:70ch}
+.ii-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px 28px;margin:14px 0}
+.ii-out h4{font-family:var(--head);margin:0 0 8px;font-size:17px}
+.ii-bar{display:grid;grid-template-columns:90px 52px 1fr;align-items:center;gap:8px;margin:6px 0}
+.ii-bar .v{font-weight:700;text-align:right}
+.ii-bar .t{display:block;height:10px;border-radius:99px;background:var(--line);overflow:hidden}
+.ii-bar .t i{display:block;height:100%;border-radius:99px}
+.ii-list{margin:0;padding-inline-start:20px}
+.ii-list li{margin:4px 0}
+.ii-meas{margin-top:14px}
+.ii-meas summary{cursor:pointer;font-weight:600}
+.ii-cav{margin-top:12px}
+@media (max-width:760px){.ii-row{grid-template-columns:minmax(0,1fr)}.ii-bar{grid-template-columns:70px 46px 1fr}}
+.ii-drop b,.ii-drop span{display:block}

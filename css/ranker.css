@@ -1,0 +1,12 @@
+.rank{margin-top:22px}
+.rankrow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:12px 0}
+.rankrow select{flex:1 1 260px;min-width:0}
+.ranklist{list-style:none;margin:14px 0 8px;padding:0;display:grid;gap:12px}
+.ranklist li{display:grid;grid-template-columns:34px minmax(0,1fr) 130px;gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--panel2)}
+.ranklist li.rkerr{grid-template-columns:1fr}.ranklist li>span:empty{display:block}
+.rkn{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:14px;border:1px solid var(--line)}
+.rkhead{display:flex;justify-content:space-between;gap:10px;font-size:16px}
+.rkv{font-weight:800}
+.rkbar{height:8px;border-radius:5px;background:rgba(160,180,255,.14);overflow:hidden;margin:6px 0}
+.rkbar i{display:block;height:100%;border-radius:5px}
+@media (max-width:560px){.ranklist li{grid-template-columns:30px minmax(0,1fr)}.ranklist li button{grid-column:1/-1}.ranklist li>span:empty{display:none}}
